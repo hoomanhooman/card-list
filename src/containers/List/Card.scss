@@ -1,0 +1,64 @@
+.card {
+  display: grid;
+  grid-template-columns: 128px 1fr 103px;
+  grid-template-rows: repeat(3, fr);
+  background-color: #d1c99214;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+  gap: 10px 16px;
+  cursor: pointer;
+  &:hover {
+    // margin: -1px 1px 1px -1px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 1);
+  }
+  & .logo {
+    grid-column: 1;
+    grid-row: 1/4;
+    // border-top-left-radius: 5px;
+    // border-bottom-left-radius: 5px;
+    border-radius: 5px 0 0 5px;
+  }
+  & .family {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: flex-end;
+    font-size: 18px;
+    font-weight: bold;
+    color: #707070;
+  }
+  & .email {
+    grid-column: 2/4;
+    grid-row: 2/3;
+    align-self: center;
+    padding-right: 10px;
+  }
+  & .phone {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding-right: 10px;
+  }
+  & .detai-btn {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    width: 78px;
+    height: 27px;
+    border-radius: 5px;
+    border: solid 1px #707070;
+    background-color: #005419;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ececec;
+    display: grid;
+    place-items: center;
+    align-self: flex-end;
+    &:hover {
+      color: #fff;
+    }
+  }
+  @media screen and (min-width: 860px) {
+    &:hover {
+      margin: -1px 1px 1px -1px;
+    }
+  }
+}

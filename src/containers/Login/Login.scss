@@ -1,0 +1,30 @@
+.login {
+  padding: 50px;
+  border-radius: 20px;
+  display: grid;
+  border: 1px solid #00000010;
+  // grid-template-columns: 400px;
+  gap: 20px;
+  max-width: 450px;
+  margin: 100px auto;
+}
+
+.header {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 5px auto;
+}
+
+.user-name {
+  grid-column: 1;
+  grid-row: 2;
+}
+.password {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.login-btn {
+  grid-column: 1;
+  grid-row: 4;
+}

@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -uses: actions/checkout@v2
-      -run: npm install
-      -run: npm run build
-      -uses: chrislennen/action-aws-cli@v1.1
-      -run: aws s3 sync dist s3://rahmati-static-bucket/
+      - uses: actions/checkout@v2
+      - run: npm install
+      - run: npm run build
+      - uses: chrislennen/action-aws-cli@v1.1
+      - run: aws s3 sync dist s3://rahmati-static-bucket/

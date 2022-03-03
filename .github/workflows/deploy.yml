@@ -1,4 +1,4 @@
-name: deploy card list
+name: "deploy card list"
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on:ubuntu-latest
-    
+
     steps:
       -uses: actions/checkout@v2
       -run: npm install

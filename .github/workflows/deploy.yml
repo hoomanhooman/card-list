@@ -1,4 +1,4 @@
-name: "deploy card list"
+name: "deploy card list 2"
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v2
       - run: npm install
       - run: npm run build
-      - uses: chrislennen/action-aws-cli@v1.1
+      - uses: chrislennon/action-aws-cli@v1.1
       - run: aws s3 sync build s3://rahmati-static-bucket/
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

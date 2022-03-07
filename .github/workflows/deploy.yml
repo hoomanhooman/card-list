@@ -1,4 +1,4 @@
-name: "deploy card list 2"
+name: deploy card list
 
 on:
   push:
